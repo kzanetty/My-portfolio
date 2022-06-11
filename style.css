@@ -122,7 +122,6 @@ img {
     border-radius: 50%;
 }
 
-
 /* ---------  MAIN  --------- */
 
 .main {
@@ -159,9 +158,11 @@ img {
     align-items: center;
     min-height: 18em;
 }
+
 .texto-reverse {
     margin-right: 1em;
 }
+
 .texto-normal {
     margin-left: 1em;
 }
@@ -170,6 +171,10 @@ img {
     background-color: #646666c9;
     border-radius: 1em;
     padding: 0.3em 0.8em;
+}
+
+.titulo-projetos > a > h3:hover{
+    color: black;
 }
 
 .texto-projetos > p {
@@ -203,13 +208,11 @@ img {
     display: flex;
     justify-content: center;
 }
+
 .imagem-projetos > img {
     width: 200px;
     border-radius: 50%;
 }
-
-
-
 
 /* ---------  FOOTER  --------- */
 
@@ -240,4 +243,10 @@ img {
     width: 20px;
     margin-right: 0.4em;
 }
+
+a:hover {
+    color: black;  
+}
+
+/* ---------  Reponsividade  --------- */
 
