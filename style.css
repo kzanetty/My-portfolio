@@ -13,10 +13,8 @@
 
 body {
     width: 100%;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 /* ---------  HEADER  --------- */
@@ -26,11 +24,8 @@ body {
 .header {
     background-color: #5f5e4e;
     width: 100%;
-    min-height: 25em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-
 }
 
  .top-bar {
@@ -88,22 +83,29 @@ img {
    /* -- conteudo header -- */
 
 .content-header {
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
+    min-height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.config-header {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .about {
     width: 70%;
-    height: 20em;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     gap: 2em;
-    padding-left: 4.2em;
-
 }
 
 .about > h1 {
@@ -122,6 +124,7 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 .imagem > img {
     width: 17em;
     border-radius: 50%;
@@ -220,6 +223,11 @@ img {
     border-radius: 50%;
 }
 
+#InterfaceSale > p > a {
+    font-weight: 800;
+    color: Black;
+}
+
 /* ---------  FOOTER  --------- */
 
 .footer {
@@ -257,14 +265,12 @@ a:hover {
 /* ---------  Reponsividade  --------- */
 
 @media (max-width: 900px) {
-    .top-bar{
-        flex-direction: column;
-        height: 5em;
-        margin-bottom: 10px;
-    }
     .content-header {
         flex-direction: column;
         justify-content: flex-end;
+    }
+    .config-header {
+        flex-direction: column;
     }
     .projetos {
         flex-direction: column;
@@ -284,7 +290,19 @@ a:hover {
         margin: 8px 0;
     }
 }
-@media (max-width: 650px) {
 
+@media (max-width: 600px) {
+    .top-bar{
+        display: none;
+    }
+} 
+
+@media (max-width: 300px) {
+    .imagem {
+        display: none;
+    }
+    .imagem-projetos {
+        display: none;
+    }
 }
 
